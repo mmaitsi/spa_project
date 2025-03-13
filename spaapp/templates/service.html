@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,12 +20,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -119,7 +120,7 @@
         </div>
         <div class="owl-carousel service-carousel">
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-1.jpg" alt="">
+                <img class="img-fluid" src="{% static 'img/service-1.jpg' %}" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Body Massage</h4>
                     <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
@@ -129,7 +130,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                <img class="img-fluid" src="{% static 'img/service-2.jpg' %}" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stone Therapy</h4>
                     <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
@@ -139,7 +140,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-3.jpg" alt="">
+                <img class="img-fluid" src="{% static 'img/service-3.jpg' %}" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Facial Therapy</h4>
                     <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
@@ -149,7 +150,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-4.jpg" alt="">
+                <img class="img-fluid" src="{% static 'img/service-4.jpg' %}" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Skin Care</h4>
                     <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
@@ -159,7 +160,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-5.jpg" alt="">
+                <img class="img-fluid" src="{% static 'img/service-5.jpg' %}" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Stream Bath</h4>
                     <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
@@ -169,7 +170,7 @@
                 </div>
             </div>
             <div class="service-item position-relative">
-                <img class="img-fluid" src="img/service-6.jpg" alt="">
+                <img class="img-fluid" src="{% static 'img/service-6.jpg' %}" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Face Masking</h4>
                     <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
@@ -240,7 +241,7 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100" src="img/testimonial.jpg" alt="">
+                    <img class="img-fluid w-100" src="{% static 'img/testimonial.jpg' %}" alt="">
                 </div>
                 <div class="col-lg-6">
                     <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">Testimonial</h6>
@@ -249,7 +250,7 @@
                         <div class="position-relative">
                             <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
+                                <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
                                     <h6 class="text-uppercase">Client Name</h6>
                                     <span>Profession</span>
@@ -260,7 +261,7 @@
                         <div class="position-relative">
                             <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
+                                <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
                                     <h6 class="text-uppercase">Client Name</h6>
                                     <span>Profession</span>
@@ -271,7 +272,7 @@
                         <div class="position-relative">
                             <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
                             <div class="d-flex align-items-center mb-3">
-                                <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" alt="">
+                                <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 60px; height: 60px;" alt="">
                                 <div class="ml-3">
                                     <h6 class="text-uppercase">Client Name</h6>
                                     <span>Profession</span>
@@ -366,20 +367,20 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>
